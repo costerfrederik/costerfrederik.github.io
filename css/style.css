@@ -1,0 +1,152 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+span, h1, h2, a {
+  margin: 0; 
+}
+
+span, a {
+  font-size: 15px;
+}
+
+.wrapper {
+  padding: 0 200px;
+}
+
+/*Header*/
+header {
+  font-family: 'Lora', sans-serif;
+  height: 110px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  justify-content: flex-end;
+  transition: height 0.3s;
+}
+
+header.activated {
+  height: 60px;
+}
+
+header ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #000000;
+}
+
+header .btn {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  color: #FFFFFF;
+  background: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+header .btn .icon {
+  margin-left: 10px;
+}
+
+/*Sections*/
+section.landing .landing-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+section.landing .landing-text span {
+  font-family: 'Lora', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+section.section {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+section.section-small {
+  padding: 120px 0;
+}
+
+section.section-small.offwhite {
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+section.landing .landing-text h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 60px 0;
+  font-size: 80px;
+  line-height: 65px;
+}
+
+section.landing .landing-text .button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+  display: inline-flex;
+  align-self: flex-start;
+  background: transparent;
+  border: 2px solid black;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+section.landing .landing-text .button:hover {
+  background-color: black;
+  color: #FFFFFF;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}

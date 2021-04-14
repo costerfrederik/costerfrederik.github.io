@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+  <meta name="description" content="description">
+  <meta name="author" content="Frederik Coster">
+  <link href="css/style.css" rel="stylesheet">
+  <meta name="keywords" content="keywords">
+  <title>Portfolio | Frederik Coster</title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="#landing">Home</a></li>
+          <li><a href="#overmij">Over mij</a></li>
+          <li><a href="#kennis">Kennis</a></li>
+          <li><a href="#contact" class="btn">Contact<i class="icon fal fa-long-arrow-right"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="landing" class="section landing">
+    <div class="wrapper" style="display: flex;">
+      <div class="landing-text">
+        <span>Ik ben</span>
+        <h1>Frederik<br>Coster.</h1>
+        <a href="#overmij" class="button">Lees meer</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="overmij" class="section-small offwhite">
+    <div class="wrapper" style="display: flex; flex-direction: column;">
+      <div style="width: 50%;">
+        <h1>Over mij</h1>
+        <p>Hoi! ik ben Frederik Coster en ik ben 18 jaar oud. Mijn hobby is op dit moment 3d printen en solderen(echt waar).<br><br>Met plezier volg ik de opleiding 'Applicatie en Media-ontwikkeling' op het MboRijnland, in Leiden. Ik loop op dit moment stage bij AtSea in Katwijk en ik heb het erg naar mij zin.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kennis" class="section-small">
+    <div class="wrapper" style="display: flex; flex-direction: column;">
+      <div style="width: 50%;">
+        <h1>Kennis</h1>
+        <p>Op dit moment loop ik stage bij AtSea Design & Media in katwijk. Ik ben op dit moment bezig met het maken van een webshop in PHP.<br>Tijdens mijn opleiding op het MboRijnland, heb ik kennis opgedaan met: HTML, CSS & SASS, Javascript, PHP, SQL en frameworks zoals Bootstrap en Laravel.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-small offwhite">
+    <div class="wrapper">
+      <h1>Contact</h1>
+      <p>Dit kan via mijn <a href="https://nl.linkedin.com/in/frederikcoster">Linkedin</a></p>
+    </div>
+  </section>
+
+
+  <script>
+    window.onscroll = () => {
+      const nav = document.querySelector('#header');
+      if(this.scrollY <= 250) {
+        nav.className = ''; 
+      } else {
+        nav.className = 'activated';
+      }
+    };
+  </script>
+
+</body>
+
+</html>
